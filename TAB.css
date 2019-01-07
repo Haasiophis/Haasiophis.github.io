@@ -1,8 +1,9 @@
 /* Style the list */
 ul.tab {
     list-style-type: none;
-    margin: 4;
-    padding: 4;
+    margin: 0;
+    margin-left:80px;
+    padding: 0;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #ABFFC1;
