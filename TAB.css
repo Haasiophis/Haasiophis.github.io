@@ -2,7 +2,7 @@
 ul.tab {
     list-style-type: none;
     margin: 90;
-    padding: 0;
+    padding: 70px 500px;
     overflow: hidden;
     border: 1px solid #08453f;
     background-color: #0c6d64;
@@ -31,7 +31,7 @@ ul.tab li a:focus, .active {background-color: #17cfbc;}
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 70px 12px;
+    padding: 70px 500px;
     border: 1px solid #08453f;
     border-top: none;
 }
