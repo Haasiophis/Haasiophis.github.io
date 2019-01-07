@@ -1,12 +1,11 @@
 /* Style the list */
 ul.tab {
     list-style-type: none;
-    margin: 0;
-    margin-left:80px;
+    margin: 90;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #ABFFC1;
+    border: 1px solid #08453f;
+    background-color: #0c6d64;
 }
 
 /* Float the list items side by side */
@@ -24,16 +23,15 @@ ul.tab li a {
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #90D8A3;}
+ul.tab li a:hover {background-color: #17cfbc;}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #90D8A3;}
+ul.tab li a:focus, .active {background-color: #17cfbc;}
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    margin-left: 90px;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    padding: 70px 12px;
+    border: 1px solid #08453f;
     border-top: none;
 }
