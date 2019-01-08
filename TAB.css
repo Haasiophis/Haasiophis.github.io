@@ -31,7 +31,7 @@ ul.tab li a:focus, .active {background-color: #17cfbc;}
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 30px 250px;
+    padding: 13px;
     border: 1px solid #08453f;
     border-top: none;
 }
