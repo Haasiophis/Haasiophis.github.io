@@ -17,6 +17,12 @@
 	width:89%;
 	align-content: center;
 }
+/* Use a media query to add a break point at 500px: */
+@media screen and (max-width:500px) {
+  .first-column, .second-column, .row1, .row2, .row3, .row4, .row5, .row6 {
+    width:90%; /* The width is 90%, when the viewport is 500px or smaller */
+  }
+}
 
 		/*general styling*/
 		body {
