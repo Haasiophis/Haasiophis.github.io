@@ -32,6 +32,7 @@
 	
 		.nameheader {
 	font-family: Bebas Neue;
+			src: url(BebasNeue-Regular.otf);
 		}
 		div.header{
 	margin-top: 4%;
