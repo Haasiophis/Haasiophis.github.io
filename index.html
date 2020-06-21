@@ -13,8 +13,19 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-132524134-1');
-</script>
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	
+</script>
+	<!-- navbar schenanigans above -->
+	
 <title>Emma Hsiao - Home</title>
 	<link rel="icon" href="favicon1.png" type="image/png">
 	<link rel="stylesheet" href="navbar.css">
@@ -22,135 +33,165 @@
 </head>
 
 <body>
-	<ul class="nav">
-		<div>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="art.html">Art</a></li>
-  <li><a href="bio.html">Wildlife Bio</a></li>
-  <li><a href="misc.html">Miscellaneous</a></li>
-					<li><a href="https://emmahsiao.myportfolio.com" target="_blank">Portfolio</a></li>
-  <li><a href="resume.pdf" target="_blank">Resume</a></li>
+	<ul class="topnav">
+		<div class="topnav" id="myTopnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="art.html">Art</a>
+  <a href="bio.html">Wildlife Bio</a>
+  <a href="misc.html">Miscellaneous</a>
+  <a href="https://emmahsiao.myportfolio.com" target="_blank">Portfolio</a>
+  <a href="resume.pdf" target="_blank">Resume</a>
+			<a class="icon" style="padding: 14px 16px;" href="javascript:void(0);" onclick="myFunction()">
+				<img src="bars.png" style="width:14px">
+			</a>
 		</div>
-				<table align="right" class="second-column" style="width:35%; padding-top:11px">
-	<div class="contact">
-	<tr align ="right">
-		<td width="1%"><a href="mailto:emma.hsiao@gmail.com" target="_blank"><img class="contacticon" style="padding-bottom:2px" width="20px" src="email.png" alt="Email me"></a></td>
-		<td width="1%"><a href="https://www.linkedin.com/in/emmahsiao/" target="_blank"><img class="contacticon" width="20px" src="linkedin.png" alt="Linkedin"></a></td>
-		<td width="1%"><a href="https://github.com/Haasiophis" target="_blank"><img class="contacticon" width="20px" src="git.png" alt="Github"></a></td>
-		<td width="1%"><a href="https://www.deviantart.com/sahel-solitude" target="_blank"><img class="contacticon" width="13px" src="da.png" alt="DeviantArt"></a></td>
-		<td width="1%"><a href="https://www.facebook.com/emma.hsiao.35" target="_blank"><img class="contacticon" width="13px" src="facebook.png" alt="Facebook"></a></td>
-		<td width="1%"><a href="https://www.instagram.com/hsiao.emma1957/?hl=en" target="_blank"><img class="contacticon" width="20px" src="ig.png" alt="Instagram"></a></td>
-		<td width="1%"><a href="https://www.youtube.com/channel/UC2JRT5CMYv0anVZc0jrWG8Q/featured?disable_polymer=1" target="_blank"><img class="contacticon" style="padding-bottom:2px" width="20px" src="youtube.png" alt="YouTube Channel"></a></td>
-		</tr>
-    </div>
-		</table>
 </ul>
-	
-<div class="header">
-		<center>
-<img src="headername2.png" style="width:80%; height:50%">
-    </center>
-	<br>
-	<img src="subheader.png" style="padding-left:36%;width:50%;">
+
+	<section>
+	<div class="container">
+	<div class="column" ><!-- style="width: 40%"-->
+<div class="blueblock" style="align-content: center; margin:2%; padding:2%;">
+			<center>
+	<text style="font-family:Bebas Neue; font-size:72pt; color: #FFFFFF;">
+				Emma Hsiao
+			</text>
+			</center>
 	</div>
-	<div>
-	<div class="first-column" ><!-- style="width: 40%"-->
-			<img src="IMG_2650.jpg" style="padding-top: 10% ; padding-left:35%; width: 55%"/>
-	</div>
- <div  class="second-column" style="padding-right: 10%">
-	<p class="face">
-		<br>
-I'm a junior at Weston High School, Massachusetts, with a passion for art, herpetology, marine biology, and wildlife conservation. 
-	</p>
+		<div class="tanblock" style="margin:2%; margin-top: 4%; padding:2%;">
+			<table>
+			<center>
+					<tr>
+						<td>
 	 <a href="https://emmahsiao.myportfolio.com" target="_blank">
-			<div class="portfolio" align="center" style="width:100%; padding-right: 6%; padding-left:10%; padding-bottom:2%;float:center">
-				<br>
-				<br>
-				<br>
-				<br>
-				
-			</div>
+		 <img class="button" src="port.png" style="width:95%;">
 		</a>
-	 	<p class="face">
-I hope to apply my artwork to research and education regarding wildlife, most notably reptiles and amphibians.  My graphics can be seen on GoHerping's merchandise, Knowbias, and on the Advocates for Snake Preservation's merchandise.  
-			
-	</p>
+					    </td>
+						<td>
+	<a href="resume.pdf" target="_blank">
+		 <img class="button" src="resumebutton.png" style="width:95%;">
+		</a>
+						</td>
+						<td>
+<a href="#bottom">
+		 <img class="button" src="contactme.png" style="width:95%;" type="button">
+</a>	
+						</td>
+					</tr>
+			</center>
+			</table>
 </div>
 		</div>
-<div class="first-column" style="width:75%; margin-left: 11%" >
+ <div class="column"> <!--style="padding-right: 10%"-->
+			<div class="blueblock" style="margin:2%;" >
+				<div class="floater">
+					<text style="font-family:Bebas Neue; font-size:24pt; color: #FFFFFF;">
+						I'm a rising senior at Weston High School, Massachusetts, with a passion for design, wildlife conservation, and marine biology. 
+					</text>
+						<div class="floater"></div>
+					<text class="face">
+						I hope to apply my artistic talents to the scientific field and help translate data into a format that is understandable by the general public.  My artwork can be seen on Tale of Scales, the Advocates for Snake Preservation's online shop, and on a scientific paper.  
+					</text>
+				</div>
+		</div>
+	</div>
+		</div>
+	</section> 
+
+<div class="column" style="margin:1%; width:98%;">
 	<br>
-	<div style="margin-left: 10%; margin-right: 10%;">
-	<img src="Rectangle_3.png" style="width:100%">
-</div>
-	  <h3 style="font-family: tahoma" class="face">Internships</h3>
-	 <h4 style="font-family: tahoma" class="face">Scientific Illustration <font color="#66978A">| Jan 2020 - Present</font></h4>
+	<div class="blueblock" style="width=100%;">
+		<div class="container" style="padding:2%;">
+	 <text class="nameheader">Internships</text>
+			<br>
+			<br>
+	 <text class="nameheader">Scientific Illustration <font color="#dfd8c6">| Jan 2020 - Present</font></text>
 	<p class="face">
-Working with Van Wallach from the Harvard Museum of Comparative Zoology as a scientific illustrator to create graphics for some of his research papers.  
-	</p><h4 style="font-family: tahoma" class="face">Graphic Design for Snake Conservation <font color="#66978A">| July 2019 - Present</font></h4>
-	<p class="face">
-I am a volunteer designer for the <a href="https://www.snakes.ngo/" target="_blank">Advocates for Snake Preservation (ASP)</a> and creating a series of <a href="https://emmahsiao.myportfolio.com/designs-for-asp" target="_blank">illustrations</a> to reflect the themes of their “Living with Snakes” and “Stop Snake Slaughter at Rattlesnake Roundups” campaigns.  
+I'm working with Van Wallach from the Harvard Museum of Comparative Zoology as a scientific illustrator to create visuals for some of his publications.  
 	</p>
-	<h4 style="font-family: tahoma" class="face">Processing Frog Reintroduction Data <font color="#66978A">| August 2019 - December 2019</font></h4>
+	<text class="nameheader">Graphic Design for Snake Conservation <font color="#dfd8c6">| July 2019 - Present</font></text>
 	<p class="face">
-Worked with Joe Martinez from the Harvard Museum of Comparative Zoology to help monitor frog reintroduction at Mt. Auburn Cemetery through data processing.  
+I am a volunteer designer for the <a href="https://www.snakes.ngo/" target="_blank">Advocates for Snake Preservation (ASP)</a> and creating a series of <a href="https://emmahsiao.myportfolio.com/designs-for-asp" target="_blank">illustrations</a> to reflect the themes of their “Living with Snakes” and “Stop Snake Slaughter at Rattlesnake Roundups” campaigns.  These designs are used to create merchandise that helps fund their research.
 	</p>
-	<div style="margin-left: 10%; margin-right: 10%;">
-	<img src="Rectangle_3.png" style="width:100%">
-</div>
-	 <h3 style="font-family: tahoma" class="face">Projects</h3>
-		 <h4 style="font-family: tahoma" class="face">Tale of Scales <font color="#66978A">| September 2019 - Present</font></h4>
+	<text class="nameheader">Processing Frog Reintroduction Data <font color="#dfd8c6">| August 2019 - December 2019</font></text>
 	<p class="face">
-	Illustrated and designed a deck of reptile and amphibian themed playing cards in light of global amphibian decline and to shed light on the diversity of herpetofauna.  This project was 50% funded in its first 24 hours on <a href="https://www.kickstarter.com/projects/haasio/the-tale-of-scales-deck" target="_blank">Kickstarter</a>.  The project hit over $5,000 total, with over 200 total backers.  <br> I have been selling extra decks and donating portions of the profits to wildlife conservation and education efforts such as the Advocates for Snake Preservation and <a href="http://www.axolotitlan.mx/" target="_blank">AXOLOTITLÁN</a>.
+I have worked with Joe Martinez from the Harvard Museum of Comparative Zoology to help monitor frog reintroduction at Mt. Auburn Cemetery by analyzing frog call recordings.  
+	</p>
+	  </div>
+	</div>
+<br>
+	<div class="tanblock"> </div>
+<br>
+	<div class="blueblock" style="width=100%;">
+				<div class="container" style="padding:2%;">
+	 <text class="nameheader">Projects</text>
+					<br>
+					<br>
+		 <text class="nameheader">Tale of Scales <font color="#dfd8c6">| September 2019 - Present</font></text>
+	<p class="face">
+	I illustrated and designed a deck of reptile and amphibian themed playing cards in light of global amphibian decline and to shed light on the diversity of herpetofauna.  This project was 50% funded in its first 24 hours on 
+		<a href="https://www.kickstarter.com/projects/haasio/the-tale-of-scales-deck" target="_blank">Kickstarter</a>.  The project hit over $5,000 total, with over 200 backers.  <br><br>
+		
+		I have been selling extra decks and donating portions of the profits to wildlife conservation and education efforts such as the Advocates for Snake Preservation and <a href="http://www.axolotitlan.mx/" target="_blank">AXOLOTITLÁN</a>.
+		<br>
 		<br>
 		Tale of Scales has won an award at the Massachusetts Art Education Association Emerging Artists Exhibition (Virginia M. Diani-Adams Award) and recieved a Gold Key from the Scholastic Art and Writing Awards.  
+		<br>
+		<br>
+		This project is constantly evolving, and I am currently working on bringing these playing cards to physical vendors and retail.
 	</p>
-	<h4 style="font-family: tahoma" class="face">Art YouTube Channel <font color="#66978A">| December 2014 - Present</font></h4>
+	<text class="nameheader">Art YouTube Channel <font color="#dfd8c6">| December 2014 - Present</font></text>
 	<p class="face">
-I run a <a href="https://www.youtube.com/channel/UC2JRT5CMYv0anVZc0jrWG8Q/featured?view_as=subscriber" target="_blank">YouTube channel</a> with an audience of 15 thousand subscribers under the name 'Haasio Draws', where I draw and animate, sometimes as an <a href="https://www.youtube.com/playlist?list=PL8Ru7XI01OYZtrl4RoZ60jqef2XosjUFn&disable_polymer=true" target="_blank">environmental or herpetological activist</a>.  I also create drawing tutorials on this channel.  
-		<div style="margin-left: 10%; margin-right: 10%;">
-	<img src="Rectangle_3.png" style="width:100%">
-</div>
-	<h3 style="font-family: tahoma" class="face">Notable Achievements</h3>
-
-	<table align="left" style="padding-right: 5%; width=100%">
+I run a <a href="https://www.youtube.com/channel/UC2JRT5CMYv0anVZc0jrWG8Q/featured?view_as=subscriber" target="_blank">YouTube channel</a> with an audience of 15 thousand subscribers under the name 'Haasio Draws', where I draw and animate, sometimes as an <a href="https://www.youtube.com/playlist?list=PL8Ru7XI01OYZtrl4RoZ60jqef2XosjUFn&disable_polymer=true" target="_blank">environmental or herpetological activist</a>.  I also create drawing tutorials, critique videos, and animated shorts.  
+	</div>
+	</div>
+	<br>
+				<div class="tanblock">	</div>
+	<br>
+<div class="blueblock" style="width:100%">
+	<div class="container" style="padding:2%; overflow:hidden">
+	<text class="nameheader">Notable Achievements and Awards</text>
+<br>
+<br>
+	<table align="left" style="width:100%;">
 			<tr style="align-content: space-between">
-		<td><img src="secondlaurel.png" width="100px"></td>
-					<td><text style="font-family:tahoma">(2020) <br>Massachusetts Art Education Association Emerging Artists Exhibition (Virginia M. Diani-Adams Award)</text></td>
-				<td><img src="firstlaurel.png" width="100px"></td>
-					<td><text style="font-family:tahoma">(2019) <br><a href="https://www.contemporaryartgalleryonline.gallery/2019-all-animal-winners" target="_blank">CAGO 2019 All Animals Contest (Mixed Media and 3D)</a></text></td>
+		<td><img src="secondlaurel.png" width="120px"></td>
+					<td><text class="face">(2020) <br>Massachusetts Art Education Association Emerging Artists Exhibition (Virginia M. Diani-Adams Award)</text></td>
+				<td><img src="firstlaurel.png" width="120px"></td>
+				
+					<td><text class="face">(2019) <br><a href="https://www.contemporaryartgalleryonline.gallery/2019-all-animal-winners" target="_blank">CAGO 2019 All Animals Contest (Mixed Media and 3D)</a></text></td>
 		</tr>
 		<tr>
-				<td><img src="laurelblank.png" width="100px"></td>
+				<td><img src="laurelblank.png" width="120px"></td>
 			
-					<td><text style="font-family:tahoma">(2019) <br> Weston High School<br>Department Award for Outstanding Achievement in Fine Arts</text></td>
+					<td><text class="face">(2019) <br> Weston High School<br>Department Award for Outstanding Achievement in Fine Arts</text></td>
 				
 		
-				<td><img src="fourthlaurel.png" width="100px"></td>
-					<td><text style="font-family:tahoma">(2019) <br> <a href="https://www.westonschools.org/high/blog/2019/03/29/whs-science-team-excelled-at-the-state-science-olympiad/" target="_blank">Massachusetts State Science Olympiad Meet Division C (Herpetology)</a>(<a href="https://www.westonschools.org/high/blog/2019/03/29/whs-science-team-excelled-at-the-state-science-olympiad/" target="_blank">solo</a>)</text></td>
+				<td><img src="fourthlaurel.png" width="120px"></td>
+					<td><text class="face">(2019) <br> <a href="https://www.westonschools.org/high/blog/2019/03/29/whs-science-team-excelled-at-the-state-science-olympiad/" target="_blank">Massachusetts State Science Olympiad Meet Division C (Herpetology)</a></text></td>
 	
 		</tr>
 		<tr style="align-content: space-between">
 
-		<td><img src="laurelblank.png" width="100px"></td>
-					<td><text style="font-family:tahoma">(2018) <br> <a href="https://emmahsiao.myportfolio.com/a-sickly-scenery" target="_blank">Artwork</a> on Display<br>at the <a href="http://www.waquoitbayreserve.org/" target="_blank">Waquoit Bay<br>National Estuariune Research Reserve's </a>Visitor Center</text></td>
+		<td><img src="laurelblank.png" width="120px"></td>
+					<td><text class="face">(2018) <br> <a href="https://emmahsiao.myportfolio.com/a-sickly-scenery" target="_blank">Artwork</a> on Display<br>at the <a href="http://www.waquoitbayreserve.org/" target="_blank">Waquoit Bay<br>National Estuariune Research Reserve's </a>Visitor Center</text></td>
 			
-			<td><img src="laurelblank.png" width="100px"></td>
-					<td><text style="font-family:tahoma">(2017) <br><a href="https://www.deviantart.com/sahel-solitude/art/Constellations-683997780" target="_blank"> Artwork featured</a><a href="https://www.deviantart.com/danlev/journal/Show-Your-Pride-With-The-New-Profile-Flag-684293119" target="_blank">  in DeviantArt's Sitewide Pride Flag</a></text></td>
+			<td><img src="laurelblank.png" width="120px"></td>
+					<td><text class="face">(2017) <br><a href="https://www.deviantart.com/sahel-solitude/art/Constellations-683997780" target="_blank"> Artwork featured</a><a href="https://www.deviantart.com/danlev/journal/Show-Your-Pride-With-The-New-Profile-Flag-684293119" target="_blank">  in DeviantArt's Sitewide Pride Flag</a></text></td>
 		</tr>
 	</table>
-
+</div>
 		<br>
 		<br>
 	</p>
+
 </div>
-<div style="margin-left: inherit; margin-right: inherit;">
-	<img src="Rectangle_3.png" style="width:100%">
-</div>
-<div>
-			<center>
-		<table background="Rectangle_5.png" width="100%" style="padding-top:1%;padding-bottom:1%;padding-left:30%; padding-right:30%">
+	</div>
+<center>
+<table width="100%" id="bottom" style="padding:1%; float: left; background-color:#9f926f">
 	<div class="contact">
-	<tr align ="center">
+	<tr align ="left">
+<td width="1%"><text class="nameheader" style="color:#193233">Contact Me</text></td>
+	<td width="1%"></td>
 		<td width="1%"><a href="mailto:emma.hsiao@gmail.com" target="_blank"><img class="contacticon" style="padding-bottom:2px" width="20px" src="email.png" alt="Email me"></a></td>
 		<td width="1%"><a href="https://www.linkedin.com/in/emmahsiao/" target="_blank"><img class="contacticon" width="20px" src="linkedin.png" alt="Linkedin"></a></td>
 		<td width="1%"><a href="https://github.com/Haasiophis" target="_blank"><img class="contacticon" width="20px" src="git.png" alt="Github"></a></td>
@@ -158,11 +199,11 @@ I run a <a href="https://www.youtube.com/channel/UC2JRT5CMYv0anVZc0jrWG8Q/featur
 		<td width="1%"><a href="https://www.facebook.com/emma.hsiao.35" target="_blank"><img class="contacticon" width="13px" src="facebook.png" alt="Facebook"></a></td>
 		<td width="1%"><a href="https://www.instagram.com/hsiao.emma1957/?hl=en" target="_blank"><img class="contacticon" width="20px" src="ig.png" alt="Instagram"></a></td>
 		<td width="1%"><a href="https://www.youtube.com/channel/UC2JRT5CMYv0anVZc0jrWG8Q/featured?disable_polymer=1" target="_blank"><img class="contacticon" style="padding-bottom:2px" width="20px" src="youtube.png" alt="YouTube Channel"></a></td>
+		<td width="8%"></td>
 		</tr>
     </div>
 		</table>
-  </center>
-</div>
-</body>
+			</center>
+	</body>
 	
 </html>
