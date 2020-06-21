@@ -1,86 +1,116 @@
 @charset "utf-8";
 /* CSS Document */
+
+html {
+  scroll-behavior: smooth;
+}
 		/*column code*/
-	.first-column {
-    width: 42%;
-    padding-right:0%;
-	padding-left: 3%;
+	.column {
+    width: 50%;
     float: left;
 }
-	.second-column {
-   			 width: 42%;
-			padding-right: 3%;
-    		float: right;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container {
-	width:89%;
+	/*width:; */
 	align-content: center;
 }
-/* Use a media query to add a break point at 500px: */
-@media screen and (max-width:500px) {
-  .first-column, .second-column, .row1, .row2, .row3, .row4, .row5, .row6 {
-    width:90%; /* The width is 90%, when the viewport is 500px or smaller */
-  }
-}
+/* Use a media query to add a break point at 600px: */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  } /* The width is 100%, when the viewport is 500px or smaller */
+  .body {
+	background-image: url("bg-small.png");
+	}
+} 
 
 		/*general styling*/
 		body {
-	background-color: #edebe7;
-	color: #10604a;
+	background-image: url("bg.png");
+ 	background-color: #193233;
+	background-size: cover;
 }
 
 @font-face {
 	font-family: Bebas Neue;
-	src: url(BebasNeue-Regular.otf);
+	src: url(BebasNeue-Bold.otf);
+}
+@font-face {
+	font-family: Lato;
+	src: url("Lato-Regular.ttf");
 }
 	
 		.nameheader {
 	font-family: Bebas Neue;
+	font-size: 24pt;
+	color: #ffffff;
 		}
 		div.header{
 	margin-top: 4%;
 	margin-right: 3%;
 		}
-		p.face {
-	font-family: tahoma;
-	color: #293431;
-	font-size: 100%;
-	line-height: 2;}
+		.face {
+	font-family: Lato;
+	color: #ffffff;
+	font-size: 14pt;
+}
 	b.color{
-	color:#66978A
+	color:#dfd8c6
+}
+/*those tan blocks on the main page i guess.  also fuck you adi*/
+.tanblock {
+	background-color: #9f926f;
+	align-self: center;  
+	padding-top:10px; 
+	padding-bottom:10px;
+}
+.blueblock {
+	background-color: rgba(47, 162, 152, 0.65);
+	align-self: center;  
+	padding-top:10px; 
+	padding-bottom:10px;
+	border-style:solid;
+	border-color: #ffffff;
+	border-width: thin;
+}
+	
+.floater {
+	margin:5%;
 }
 		
-		
-		/* unvisited link */
+		/* link */
 	a:link {
-  	color:#456f63;
+  	color:#193233;
+		
 }
-/* visited link */
-	a:visited {
-  	color: #5E4329;
-		}
+
+   .face a:link {
+	color:#dfd8c6;
+}
 /* mouse over link */
 	a:hover {
- 	 color: #49A475;
+ 	 color: #2fa298;
 		}
-/* selected link */
-	a:active {
-  	color: blue;
-	}
-		.portfolio {
-			background: url("portfolio.png") no-repeat;
-			background-size: 68%;
-  			margin-left: auto;
-  			margin-right: auto;
+
+	.face a:hover {
+ 	 color: #193233;
 		}
-		
-		.portfolio:hover {
-			background: url("portfolio2.png") no-repeat;
-			background-size: 70%;
-  			margin-left: auto;
- 			margin-right: auto;
-		}
+
+.face a:visited {
+	color:#9f926f;
+} 
+
+.button {
+	  transition: transform .2s; /* Animation */
+}
+
+.button:hover {
+	transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
 div.gallery {
   margin: 5px;
