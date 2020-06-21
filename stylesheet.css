@@ -41,8 +41,8 @@ html {
 	src: url(BebasNeue-Bold.otf);
 }
 @font-face {
-	font-family: Lato;
-	src: url("Lato-Regular.ttf");
+	font-family: Montserrat;
+	src: url(Montserrat-Medium.ttf);
 }
 	
 		.nameheader {
@@ -55,7 +55,7 @@ html {
 	margin-right: 3%;
 		}
 		.face {
-	font-family: Lato;
+	font-family: Montserrat;
 	color: #ffffff;
 	font-size: 14pt;
 }
@@ -77,6 +77,12 @@ html {
 	border-style:solid;
 	border-color: #ffffff;
 	border-width: thin;
+}
+
+.line {
+	background-color: #193233;
+	align-self: center;  
+	padding: 1px;
 }
 	
 .floater {
@@ -110,27 +116,26 @@ html {
 }
 
 .button:hover {
-	transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
+	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
 div.gallery {
   margin: 5px;
-  border: 3px solid #C2B48D;
+	margin-right:4%;
   float: left;
-  height: 200px;
 }
 
-div.gallery:hover {
-  border: 3px solid #669689;
-}
 
 div.gallery img {
-  width: auto;
-  height: 100%;
+  width: 300px;
+  height: 200px;
 	align-self: center
 }
 
 div.desc {
   padding: 15px;
-  text-align: center;
-	font-family: tahoma
+  text-align: left;
+	font-family: montserrat;
+	color: #ffffff;
+	font-size: 14pt;
+
 }
