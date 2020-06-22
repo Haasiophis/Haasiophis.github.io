@@ -118,6 +118,13 @@ html {
 .button:hover {
 	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
+.icon {
+	  transition: transform .2s; /* Animation */
+}
+
+.icon:hover {
+	transform: scale(1.50); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
+
 div.gallery {
   margin: 5px;
 	margin-right:4%;
