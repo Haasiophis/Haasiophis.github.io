@@ -25,13 +25,13 @@ html {
     width: 100%;
   } /* The width is 100%, when the viewport is 500px or smaller */
   .body {
-	background-image: url("bg-small.png");
+	background-image: url("bg2.png");
 	}
 } 
 
 		/*general styling*/
 		body {
-	background-image: url("bg.png");
+	background-image: url("bg2.png");
  	background-color: #193233;
 	background-size: cover;
 }
@@ -64,13 +64,13 @@ html {
 }
 /*those tan blocks on the main page i guess.  also fuck you adi*/
 .tanblock {
-	background-color: #9f926f;
+	background-color: #c3ae9e;
 	align-self: center;  
 	padding-top:10px; 
 	padding-bottom:10px;
 }
 .blueblock {
-	background-color: rgba(47, 162, 152, 0.65);
+	background-color: rgba(47, 162, 152, 0.85);
 	align-self: center;  
 	padding-top:10px; 
 	padding-bottom:10px;
