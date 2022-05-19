@@ -77,6 +77,8 @@ html {
 	border-style:solid;
 	border-color: #ffffff;
 	border-width: thin;
+	position: relative;
+	overflow: hidden;
 }
 
 .line {
