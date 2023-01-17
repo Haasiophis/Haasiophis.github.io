@@ -25,14 +25,14 @@ html {
     width: 100%;
   } /* The width is 100%, when the viewport is 500px or smaller */
   .body {
-	background-image: url("bg2.png");
+	background-image: url("websitebg.png");
 	}
 } 
 
 		/*general styling*/
 		body {
-	background-image: url("bg2.png");
- 	background-color: #193233;
+	background-image: url("websitebg.png");
+ 	background-color: #ffffff;
 	background-size: cover;
 }
 
@@ -42,25 +42,37 @@ html {
 }
 @font-face {
 	font-family: Montserrat;
-	src: url(Montserrat-Medium.ttf);
+	src: url("Montserrat-Medium.ttf");
 }
 	
-		.nameheader {
+		text.nameheader {
 	font-family: Bebas Neue;
-	font-size: 24pt;
+	font-size: 40pt;
 	color: #ffffff;
 		}
-		div.header{
-	margin-top: 4%;
-	margin-right: 3%;
+		text.plainnameheader {
+	font-family: Bebas Neue;
+	font-size: 40pt;
+	color: #133642;
 		}
-		.face {
+		text.header{
+	font-family: Bebas Neue;
+	font-size: 30pt;
+	color: #ffffff;
+		}
+		text.face {
 	font-family: Montserrat;
 	color: #ffffff;
 	font-size: 14pt;
 }
+
+		text.plainface {
+	font-family: Montserrat;
+	color: #133642;
+	font-size: 14pt;
+}
 	b.color{
-	color:#dfd8c6
+	color:#093640
 }
 /*those tan blocks on the main page i guess.  also fuck you adi*/
 .tanblock {
@@ -70,14 +82,23 @@ html {
 	padding-bottom:10px;
 }
 .blueblock {
-	background-color: rgba(47, 162, 152, 0.85);
+	background-color: #2d8c8d;
 	align-self: center;  
-	padding-top:10px; 
-	padding-bottom:10px;
-	border-style:solid;
-	border-color: #ffffff;
-	border-width: thin;
+	align-content: center;
+	padding:10px;
 	overflow: hidden;
+	margin-left: 10%;
+	margin-right: 10%;
+	box-shadow: 0px 10px #206875;
+}
+
+.invisible {
+	align-self: center;  
+	padding:25px;
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: hidden;
+
 }
 
 .line {
@@ -113,10 +134,46 @@ html {
 } 
 
 .button {
-	  transition: transform .2s; /* Animation */
+  display: inline-block;
+  background-color: #2d8c8d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.button:hover {
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*.button:hover {
 	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
 .icon {
