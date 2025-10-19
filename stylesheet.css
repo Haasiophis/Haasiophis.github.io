@@ -102,6 +102,13 @@ img.circle {
   list-style: none;
 }
 
+/* Make a one column-layout instead of three-column layout */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
 .flex-item {
 	flex:1;
   padding: 5%;
