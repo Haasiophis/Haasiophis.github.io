@@ -1,41 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-html {
-  scroll-behavior: smooth;
-}
-		/*column code*/
-	.column {
-    width: 50%;
-    float: left;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.container {
-	/*width:; */
-	align-content: center;
-}
-/* Use a media query to add a break point at 600px: */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  } /* The width is 100%, when the viewport is 500px or smaller */
-  .body {
-	background-image: url("websitebg.png");
-	}
-} 
-
-		/*general styling*/
-		body {
-	background-image: url("websitebg.png");
- 	background-color: #ffffff;
-	background-size: cover;
-}
-
 @font-face {
 	font-family: Bebas Neue;
 	src: url(BebasNeue-Bold.otf);
@@ -44,7 +9,16 @@ html {
 	font-family: Montserrat;
 	src: url("Montserrat-Medium.ttf");
 }
-	
+	  .body {
+	background-image: url("websitebg.png");
+	}
+/*general styling*/
+		body {
+	background-image: url("websitebg.png");
+ 	background-color: #ffffff;
+	background-size: cover;
+	}
+
 		text.nameheader {
 	font-family: Bebas Neue;
 	font-size: 40pt;
@@ -60,10 +34,17 @@ html {
 	font-size: 30pt;
 	color: #ffffff;
 		}
+
 		text.face {
 	font-family: Montserrat;
 	color: #ffffff;
 	font-size: 14pt;
+}
+
+		text.headface {
+	font-family: Montserrat;
+	color: #ffffff;
+	font-size: 40pt;
 }
 
 		text.plainface {
@@ -74,13 +55,7 @@ html {
 	b.color{
 	color:#093640
 }
-/*those tan blocks on the main page i guess.  also fuck you adi*/
-.tanblock {
-	background-color: #c3ae9e;
-	align-self: center;  
-	padding-top:10px; 
-	padding-bottom:10px;
-}
+
 .blueblock {
 	background-color: #2d8c8d;
 	align-self: center;  
@@ -98,40 +73,44 @@ html {
 	margin-left: 10%;
 	margin-right: 10%;
 	overflow: hidden;
-
 }
 
-.line {
-	background-color: #193233;
-	align-self: center;  
-	padding: 1px;
-}
-	
-.floater {
-	margin:5%;
-}
-		
-		/* link */
-	a:link {
-  	color:#193233;
-		
+
+img.circle {
+		border-radius: 50%;  
+  height: auto;
 }
 
-   .face a:link {
-	color:#dfd8c6;
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-/* mouse over link */
-	a:hover {
- 	 color: #2fa298;
-		}
 
-	.face a:hover {
- 	 color: #193233;
-		}
+.flex-item {
+	flex:1;
+  padding: 5%;
+  margin: 0%;
+	  justify-content: center;
+  align-items: center;
+	  display: flex;
+}
 
-.face a:visited {
-	color:#193233;
-} 
 
 .button {
   display: inline-block;
@@ -174,7 +153,7 @@ html {
 }
 
 /*.button:hover {
-	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
+	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) }*/
 
 .icon {
 	  transition: transform .2s; /* Animation */
@@ -183,24 +162,52 @@ html {
 .icon:hover {
 	transform: scale(1.50); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
-div.gallery {
+.button {
+  display: inline-block;
+  background-color: #2d8c8d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
   margin: 5px;
-	margin-right:4%;
-  float: left;
 }
 
-
-div.gallery img {
-  width: 100%;
-  height: 100%;
-	align-self: center
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: left;
-	font-family: montserrat;
-	color: #ffffff;
-	font-size: 14pt;
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
 
 }
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*.button:hover {
+	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) }*/
+
+.icon {
+	  transition: transform .2s; /* Animation */
+}
+
+.icon:hover {
+	transform: scale(1.50); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
