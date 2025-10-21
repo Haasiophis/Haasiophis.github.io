@@ -25,8 +25,8 @@
 	color: #ffffff;
 		}
 		text.plainnameheader {
-	font-family: Bebas Neue;
-	font-size: 40pt;
+	font-family: Montserrat;
+	font-size: 30pt;
 	color: #133642;
 		}
 		text.header{
@@ -111,7 +111,7 @@ img.circle {
 
 .flex-item {
 	flex:1;
-  padding: 5%;
+  padding: 2%;
   margin: 0%;
 	  justify-content: center;
   align-items: center;
@@ -120,17 +120,16 @@ img.circle {
 
 
 .button {
-  display: inline-block;
   background-color: #2d8c8d;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  /*
+	padding: 20px;
+  width: 200px; */
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
 }
 
 .button span {
@@ -145,7 +144,6 @@ img.circle {
   position: relative;
   opacity: 0;
   top: 0;
-  right: -20px;
   transition: 0.5s;
 }
 
@@ -169,52 +167,30 @@ img.circle {
 .icon:hover {
 	transform: scale(1.50); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
 
-.button {
-  display: inline-block;
-  background-color: #2d8c8d;
-  border: none;
-  color: #FFFFFF;
+/*stuf for grid*/
+.gridcontainer {
+  display: grid;
+	  grid-template-columns: 49% 49%;
+	gap:2%;
+}
+
+/* Make a one column-layout instead of three-column layout */
+@media (max-width: 600px) {
+  .gridcontainer {
+    grid-template-columns: 100%;
+  }
+}
+.gridcontainer button {
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.gridcontainer div {
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+	height:flex;
+	
+	            display: flex;
+            justify-content: center;
+            align-items: center;
 }
-
-.button span:after {
-  content: '\00bb';
-  position: relative;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/*.button:hover {
-	transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) }*/
-
-.icon {
-	  transition: transform .2s; /* Animation */
-}
-
-.icon:hover {
-	transform: scale(1.50); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
